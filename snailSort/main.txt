@@ -1,0 +1,39 @@
+INSTRUCTIONS
+Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.
+
+array = [[1,2,3],
+         [4,5,6],
+         [7,8,9]]
+snail(array) #=> [1,2,3,6,9,8,7,4,5]
+
+
+Requirements
+Must take in a multidimensional array and return a regular array
+Will always travel right -> down -> left -> up
+Distance needed to travel decreases by 1 each iteration (Width starts at 1st array length, height starts at # of arrays)
+Stops when all contents of multidimensional array have been logged
+
+Data.
+    array = [0. 1. 2. 
+
+        0   [[1,2,3],
+        1    [4,5,6],
+        2    [7,8,9]]
+
+            ]
+    top = 0
+    right = 2
+    bottom = 2
+    left = 0
+    snailArray = [1, ]
+    distanceTraveled = 0
+    repetitions = 0
+
+Right
+    until distanceTraveled = 2
+        add value to snailArray; 
+Down
+
+Left
+
+Up 

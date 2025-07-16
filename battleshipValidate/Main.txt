@@ -1,0 +1,28 @@
+
+Data. (currentPosition = 2,4) (boatStart = 2,3) (cells = 1) (totalBoats [4cell = 0, 3cell = 1, 2cell = 0, 1cell = 0]) (currentBoat = 4,3)
+
+1. Seeing if we are at a boat
+1a. Check if boat @ currentPosition
+    boat @ currentPosition : ask are we in middle of boat?
+        middle of boat: cells += 1, go to 2 
+        not middle of boat : (boatStart = currentPosition), cells +=1, go to 2
+    no boat @ currentPosition: (currentPosition = x increase by 1), return to 1a
+
+2. Finding size of boat (currentBoat = boatStart) (cells = 1 => 3)
+2a. Check if boat below currentBoat
+    boat below: cells += 1, (currentBoat = increase y by 1), repeat 2a
+        no boat below: 
+            cells > 1 : register boat by cells, (currentPosition =increase x by 1), return to 1a 
+            cells = 1: go to 2b *means boat is horizontal or single cell*
+2b. Check if boat to right of currentBoat
+        boat right: cells += 1, (currentBoat = increase x by 1), (currentPosition = increase x by 1), repeat 2b
+        no boat right: register boat by cells, (currentPosition = increase x by 1), return to 1a 
+
+
+Reach end of array
+
+3 check totalBoats
+    correct amount of boats: field is valid
+    incorrect amount of boats: field is invalid
+
+idk how to check for diagonals

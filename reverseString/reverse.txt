@@ -1,0 +1,8 @@
+string = "hello"
+newString = ""
+
+Find length of string
+
+Starting from length(end of string) until you reach 0(beginning of string)
+    add character @ current position to newString
+    move left

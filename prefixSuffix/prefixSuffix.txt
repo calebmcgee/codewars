@@ -1,0 +1,23 @@
+Requirements 
+string lengths are 1 <= length <= 500
+
+
+
+
+
+
+
+string = "abcdabc"
+prefix = "ab"
+prefixCount = 1
+currentLetter = ""
+
+
+
+start at beginning of string
+    prefix += currentLetter
+    does string end with prefix
+        no: return prefixCount
+        yes: add 1 to prefixCount; repeat
+
+endswith

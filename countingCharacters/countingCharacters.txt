@@ -1,0 +1,11 @@
+char = "r"
+string = "racer
+count = 0
+
+repeat until done with string
+start at first character in string
+    if character = char
+        add 1 to count; next character
+    else
+        next character
+return count
