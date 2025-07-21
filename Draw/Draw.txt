@@ -1,0 +1,28 @@
+--------
+Start = 5
+Levels = 5 
+
+To print head :
+1. print spaces - 5 * (levels - 1)
+2. print head - "  o  "
+3. print *s after head - 6
+4. print spaces after - (Start - levels) * 5
+5. print 1 asterisk for border
+
+To print body :
+1. print spaces - 5 * (levels - 1)
+2. print body - " /|\ "
+3. print * + spaces after body - "*" + 5 spaces
+4. print spaces after - (Start - levels) * 5
+5. print 1 asterisk for border
+
+To print legs :
+1. print spaces - 5 * (levels - 1)
+2. print legs - " / \ "
+3. print * + spaces after legs - "*" + 5 spaces
+4. print spaces after - (Start - levels) * 5
+5. print 1 asterisk for border
+
+Subtract 1 from levels. restart
+
+Print * border on bottom - (levels x 6) + 2 = number of *s
