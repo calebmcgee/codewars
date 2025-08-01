@@ -1,0 +1,31 @@
+Sort array of numbers from least to greatest
+
+
+
+
+
+array = [15, 10, 25, 3, 18]
+new array = [15, 10, 25, 3, 18]
+i = 0
+j = 0
+a = 
+b = 
+
+1. a = index i of array 
+if value of i > value of i + 1
+    go to 2
+otherwise 
+    i + 1
+
+2.  b = index j of array
+
+    if a >= b 
+        increase j by 1, repeat step 2
+    if a < b
+        first index of = value of j-1
+        set index j - 1 to a
+        j = 0, repeat from 1
+    
+
+
+

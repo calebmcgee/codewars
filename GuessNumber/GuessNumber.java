@@ -20,5 +20,6 @@ public class GuessNumber {
                 System.out.println("Incorrect, too high");
             }
         }
+        check.close();
     }
 }
